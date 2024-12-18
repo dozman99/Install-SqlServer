@@ -65,7 +65,7 @@ Start-Transcript "$PSScriptRoot\$scriptName-$($start.ToString('s').Replace(':','
 if (!$IsoPath) {
     Write-Host "SQLSERVER_ISOPATH environment variable not specified, using defaults"
     $IsoPath = "https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e7112d1/SQLServer2019-x64-ENU-Dev.iso"
-
+# https://download.microsoft.com/download/3/8/d/38de7036-2433-4207-8eae-06e247e17b25/SQLServer2022-x64-ENU-Dev.iso
     $saveDir = Join-Path $Env:TEMP $scriptName
     New-item $saveDir -ItemType Directory -ErrorAction 0 | Out-Null
 
